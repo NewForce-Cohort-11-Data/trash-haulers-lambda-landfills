@@ -1,0 +1,1063 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='missed_pickups' inline='true' name='federated.044sd5h0dbjqr012cczth1wxxzn9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='missed_pickups' name='textscan.1wvbi831kg0iy916yevjd0m6voth'>
+            <connection class='textscan' directory='C:/Users/Newforce/workspace/c11/Python/projects/trash-haulers-lambda-landfills' filename='missed_pickups.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wvbi831kg0iy916yevjd0m6voth' name='missed_pickups.csv' table='[missed_pickups#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Request_Number' ordinal='0' />
+            <column datatype='date' name='Date_Opened' ordinal='1' />
+            <column datatype='string' name='Request' ordinal='2' />
+            <column datatype='string' name='Description' ordinal='3' />
+            <column datatype='string' name='Incident_Address' ordinal='4' />
+            <column datatype='integer' name='Zip_Code' ordinal='5' />
+            <column datatype='string' name='Trash_Hauler_x' ordinal='6' />
+            <column datatype='integer' name='Trash_Route' ordinal='7' />
+            <column datatype='integer' name='Council_District' ordinal='8' />
+            <column datatype='real' name='State_Plan_X' ordinal='9' />
+            <column datatype='real' name='State_Plan_Y' ordinal='10' />
+            <column datatype='string' name='Trash_Hauler_y' ordinal='11' />
+            <column datatype='integer' name='missed_count' ordinal='12' />
+            <column datatype='integer' name='fines' ordinal='13' />
+            <column datatype='integer' name='Missed_by_Zip' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Request_Number]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Request_Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_Opened</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date_Opened]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Date_Opened</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Request]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Request</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident_Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Incident_Address]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Incident_Address</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip_Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip_Code]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Zip_Code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_x]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Hauler_x</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Route</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trash_Route]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Route</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Council_District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Council_District]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Council_District</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_Plan_X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State_Plan_X]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>State_Plan_X</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_Plan_Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State_Plan_Y]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>State_Plan_Y</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_y]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Hauler_y</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>missed_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[missed_count]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>missed_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fines]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>fines</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Missed_by_Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Missed_by_Zip]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Missed_by_Zip</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Council District' datatype='integer' name='[Council_District]' role='measure' type='quantitative' />
+      <column caption='Date Opened' datatype='date' name='[Date_Opened]' role='dimension' type='ordinal' />
+      <column caption='Incident Address' datatype='string' name='[Incident_Address]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Missed by Zip' datatype='integer' default-format='*00000' name='[Missed_by_Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='string' name='[Request]' role='dimension' type='nominal' />
+      <column caption='Request Number' datatype='integer' name='[Request_Number]' role='dimension' type='ordinal' />
+      <column caption='State Plan X' datatype='real' name='[State_Plan_X]' role='measure' type='quantitative' />
+      <column caption='State Plan Y' datatype='real' name='[State_Plan_Y]' role='measure' type='quantitative' />
+      <column caption='Trash Hauler x' datatype='string' name='[Trash_Hauler_x]' role='dimension' type='nominal' />
+      <column caption='Trash Hauler y' datatype='string' name='[Trash_Hauler_y]' role='dimension' type='nominal' />
+      <column caption='Trash Route' datatype='integer' name='[Trash_Route]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Zip Code' datatype='integer' default-format='*00000' name='[Zip_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='missed_pickups.csv' datatype='table' name='[__tableau_internal_object_id__].[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]' role='measure' type='quantitative' />
+      <column caption='Fines' datatype='integer' name='[fines]' role='measure' type='quantitative' />
+      <column caption='Missed Count' datatype='integer' name='[missed_count]' role='measure' type='quantitative' />
+      <column-instance column='[Request]' derivation='Attribute' name='[attr:Request:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Request]' derivation='None' name='[none:Request:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Request)' hidden='true' name='[Action (Request)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Request]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Newforce/AppData/Local/Temp/TableauTemp/#TableauTemp_10jnp510650f4t14p9tz00ollb9t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/24/2025 06:12:39 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Request_Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Request_Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Request_Number</remote-alias>
+              <ordinal>0</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13923</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date_Opened</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date_Opened]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date_Opened</remote-alias>
+              <ordinal>1</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Request</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Request]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Request</remote-alias>
+              <ordinal>2</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>3</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4365</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident_Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident_Address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident_Address</remote-alias>
+              <ordinal>4</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6018</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip_Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip_Code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trash_Hauler_x</remote-alias>
+              <ordinal>6</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Route</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Trash_Route]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trash_Route</remote-alias>
+              <ordinal>7</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Council_District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Council_District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Council_District</remote-alias>
+              <ordinal>8</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_Plan_X</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[State_Plan_X]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State_Plan_X</remote-alias>
+              <ordinal>9</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_Plan_Y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[State_Plan_Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State_Plan_Y</remote-alias>
+              <ordinal>10</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6024</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trash_Hauler_y</remote-alias>
+              <ordinal>11</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>missed_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[missed_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>missed_count</remote-alias>
+              <ordinal>12</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fines</remote-alias>
+              <ordinal>13</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Missed_by_Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Missed_by_Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Missed_by_Zip</remote-alias>
+              <ordinal>14</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_88A4B99526024516AFD5A63FC1173538]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[attr:Request:nk]' palette='cyclic_10_0' type='palette'>
+            <map to='#2cb5c0'>
+              <bucket>&quot;Trash - Curbside/Alley Missed Pickup&quot;</bucket>
+            </map>
+            <map to='#a2b627'>
+              <bucket>&quot;Trash - Backdoor&quot;</bucket>
+            </map>
+            <map to='#f8b620'>
+              <bucket>&quot;Trash Collection Complaint&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Request:nk]' palette='nuriel_stone_10_0' type='palette'>
+            <map to='#8175aa'>
+              <bucket>&quot;Trash - Curbside/Alley Missed Pickup&quot;</bucket>
+            </map>
+            <map to='#959c9e'>
+              <bucket>&quot;Trash - Backdoor&quot;</bucket>
+            </map>
+            <map to='#a39fc9'>
+              <bucket>&quot;Trash Collection Complaint&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='missed_pickups.csv' id='missed_pickups.csv_88A4B99526024516AFD5A63FC1173538'>
+            <properties context=''>
+              <relation connection='textscan.1wvbi831kg0iy916yevjd0m6voth' name='missed_pickups.csv' table='[missed_pickups#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Request_Number' ordinal='0' />
+                  <column datatype='date' name='Date_Opened' ordinal='1' />
+                  <column datatype='string' name='Request' ordinal='2' />
+                  <column datatype='string' name='Description' ordinal='3' />
+                  <column datatype='string' name='Incident_Address' ordinal='4' />
+                  <column datatype='integer' name='Zip_Code' ordinal='5' />
+                  <column datatype='string' name='Trash_Hauler_x' ordinal='6' />
+                  <column datatype='integer' name='Trash_Route' ordinal='7' />
+                  <column datatype='integer' name='Council_District' ordinal='8' />
+                  <column datatype='real' name='State_Plan_X' ordinal='9' />
+                  <column datatype='real' name='State_Plan_Y' ordinal='10' />
+                  <column datatype='string' name='Trash_Hauler_y' ordinal='11' />
+                  <column datatype='integer' name='missed_count' ordinal='12' />
+                  <column datatype='integer' name='fines' ordinal='13' />
+                  <column datatype='integer' name='Missed_by_Zip' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_A35961BB6EE942059C5CBDEE1B514967]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_63FF75365E0B44D4BE61D020AF5106D3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Distribution of Request Types</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='missed_pickups' name='federated.044sd5h0dbjqr012cczth1wxxzn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.044sd5h0dbjqr012cczth1wxxzn9'>
+            <column datatype='string' name='[Request]' role='dimension' type='nominal' />
+            <column-instance column='[Request]' derivation='Count' name='[cnt:Request:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Request]' derivation='None' name='[none:Request:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[Action (Request)]'>
+            <groupfilter function='level-members' level='[Request]' user:ui-action-filter='[Action1_23291AB7BC8842A5BC460F9F6AD1FAF8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.044sd5h0dbjqr012cczth1wxxzn9].[Action (Request)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' scope='rows' value='Request Count' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' field='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' value='#000000' />
+            <format attr='font-family' data-class='subtotal' field='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' value='Request Type'>
+              <formatted-text>
+                <run>Request Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' />
+              <text column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575' fontname='Tableau Light'>Æ&#9;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]</rows>
+        <cols>[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]</cols>
+      </table>
+      <simple-id uuid='{28540324-AE56-4EFA-8F71-7F63AE7FE684}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Semibold'>Top 3 Complaint Types</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='missed_pickups' name='federated.044sd5h0dbjqr012cczth1wxxzn9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.044sd5h0dbjqr012cczth1wxxzn9'>
+            <column datatype='string' name='[Request]' role='dimension' type='nominal' />
+            <column-instance column='[Request]' derivation='Count' name='[cnt:Request:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Request]' derivation='None' name='[none:Request:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Request]' derivation='Count' name='[pcto:cnt:Request:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[Action (Request)]'>
+            <groupfilter function='level-members' level='[Request]' user:ui-action-filter='[Action2_DBD1FC3AFF7C45BDA873D74B5A385756]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.044sd5h0dbjqr012cczth1wxxzn9].[Action (Request)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' value='Total Requests'>
+              <formatted-text>
+                <run>Total Requests</run>
+              </formatted-text>
+            </format>
+            <format attr='color' field='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' value='Complaint Type'>
+              <formatted-text>
+                <run>Complaint Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' />
+              <wedge-size column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' />
+              <size column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' />
+              <text column='[federated.044sd5h0dbjqr012cczth1wxxzn9].[pcto:cnt:Request:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575' fontname='Tableau Light'>Request Type:&#9;</run>
+                <run bold='true' fontname='Tableau Light'><![CDATA[<[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575' fontname='Tableau Light'>Request Count:&#9;</run>
+                <run bold='true' fontname='Tableau Light'><![CDATA[<[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575' fontname='Tableau Light'>% of Total Count:&#9;</run>
+                <run bold='true' fontname='Tableau Light'><![CDATA[<[federated.044sd5h0dbjqr012cczth1wxxzn9].[pcto:cnt:Request:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{063BBD4D-24B2-4164-BE66-BA0E35893218}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='56248' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='56248' id='5' type-v2='layout-basic' w='73692' x='1231' y='1429'>
+              <zone h='56248' id='3' name='Sheet 1' w='73692' x='1231' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='155' h='56248' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='23846' x='74923' y='1429'>
+              <zone fixed-size='92' h='17858' id='10' is-fixed='true' name='Sheet 2' pane-specification-id='0' param='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' type-v2='size' w='23846' x='74923' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='132' h='25000' id='8' is-fixed='true' name='Sheet 1' pane-specification-id='0' param='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' type-v2='color' w='23846' x='74923' y='19287'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='40894' id='9' name='Sheet 2' w='97538' x='1231' y='57677'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='17' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='56248' id='3' is-fixed='true' name='Sheet 1' w='73692' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='25000' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' type-v2='color' w='23846' x='74923' y='19287'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40894' id='9' is-fixed='true' name='Sheet 2' w='97538' x='1231' y='57677'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='92' h='17858' id='10' name='Sheet 2' pane-specification-id='0' param='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' type-v2='size' w='23846' x='74923' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{90B5D6E3-B12D-4632-8979-E1A06AB47E93}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{2646B94F-234D-4F0F-B9C2-14E5F86A5992}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.044sd5h0dbjqr012cczth1wxxzn9].[cnt:Request:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.044sd5h0dbjqr012cczth1wxxzn9].[none:Request:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E88187E2-5AB5-4153-8D60-B364B335E74F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5195E0BE-B12B-42FD-A3D9-C9208D1A3241}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      cOXeAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
