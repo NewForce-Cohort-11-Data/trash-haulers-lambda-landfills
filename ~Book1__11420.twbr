@@ -1,0 +1,2877 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='missed_pickups' inline='true' name='federated.0wociql1rfg61112vt46610ei7sv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='missed_pickups' name='textscan.0zuekx20j4apa214qk58i0un3qmm'>
+            <connection class='textscan' directory='C:/Users/user/workspace/c11/Python/projects/Group_Projects/trash-haulers-lambda-landfills' filename='missed_pickups.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0zuekx20j4apa214qk58i0un3qmm' name='missed_pickups.csv' table='[missed_pickups#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Request_Number' ordinal='0' />
+            <column datatype='date' name='Date_Opened' ordinal='1' />
+            <column datatype='string' name='Request' ordinal='2' />
+            <column datatype='string' name='Description' ordinal='3' />
+            <column datatype='string' name='Incident_Address' ordinal='4' />
+            <column datatype='integer' name='Zip_Code' ordinal='5' />
+            <column datatype='string' name='Trash_Hauler_x' ordinal='6' />
+            <column datatype='integer' name='Trash_Route' ordinal='7' />
+            <column datatype='integer' name='Council_District' ordinal='8' />
+            <column datatype='real' name='State_Plan_X' ordinal='9' />
+            <column datatype='real' name='State_Plan_Y' ordinal='10' />
+            <column datatype='string' name='Trash_Hauler_y' ordinal='11' />
+            <column datatype='integer' name='missed_count' ordinal='12' />
+            <column datatype='integer' name='fines' ordinal='13' />
+            <column datatype='integer' name='Missed_by_Zip' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Request_Number]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Request_Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_Opened</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date_Opened]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Date_Opened</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Request]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Request</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident_Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Incident_Address]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Incident_Address</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip_Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip_Code]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Zip_Code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_x]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Hauler_x</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Route</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trash_Route]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Route</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Council_District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Council_District]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Council_District</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_Plan_X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State_Plan_X]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>State_Plan_X</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_Plan_Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State_Plan_Y]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>State_Plan_Y</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_y]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Hauler_y</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>missed_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[missed_count]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>missed_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fines]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>fines</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Missed_by_Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Missed_by_Zip]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Missed_by_Zip</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Council District' datatype='integer' name='[Council_District]' role='measure' type='quantitative' />
+      <column caption='Date Opened' datatype='date' name='[Date_Opened]' role='dimension' type='ordinal' />
+      <column caption='Incident Address' datatype='string' name='[Incident_Address]' role='dimension' type='nominal' />
+      <column caption='Missed by Zip' datatype='integer' default-format='*00000' name='[Missed_by_Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Request Number' datatype='integer' name='[Request_Number]' role='dimension' type='ordinal' />
+      <column caption='State Plan X' datatype='real' name='[State_Plan_X]' role='measure' type='quantitative' />
+      <column caption='State Plan Y' datatype='real' name='[State_Plan_Y]' role='measure' type='quantitative' />
+      <column caption='Trash Hauler x' datatype='string' name='[Trash_Hauler_x]' role='dimension' type='nominal' />
+      <column caption='Trash Hauler y' datatype='string' name='[Trash_Hauler_y]' role='dimension' type='nominal' />
+      <column caption='Trash Route' datatype='integer' name='[Trash_Route]' role='measure' type='quantitative' />
+      <column caption='Zip Code' datatype='integer' default-format='*00000' name='[Zip_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='missed_pickups.csv' datatype='table' name='[__tableau_internal_object_id__].[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]' role='measure' type='quantitative' />
+      <column caption='Fines' datatype='integer' name='[fines]' role='measure' type='quantitative' />
+      <column caption='Missed Count' datatype='integer' name='[missed_count]' role='measure' type='quantitative' />
+      <column-instance column='[Trash_Hauler_x]' derivation='None' name='[none:Trash_Hauler_x:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Trash Hauler x)' hidden='true' name='[Action (Trash Hauler x)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Trash_Hauler_x]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Zip Code)' hidden='true' name='[Action (Zip Code)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Zip_Code]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_17cd1xm1w62rol13gwtuq12mf9sr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/24/2025 05:51:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Request_Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Request_Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Request_Number</remote-alias>
+              <ordinal>0</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13923</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date_Opened</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date_Opened]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date_Opened</remote-alias>
+              <ordinal>1</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Request</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Request]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Request</remote-alias>
+              <ordinal>2</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>3</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4365</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident_Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident_Address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident_Address</remote-alias>
+              <ordinal>4</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6018</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip_Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip_Code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trash_Hauler_x</remote-alias>
+              <ordinal>6</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Route</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Trash_Route]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trash_Route</remote-alias>
+              <ordinal>7</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Council_District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Council_District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Council_District</remote-alias>
+              <ordinal>8</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_Plan_X</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[State_Plan_X]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State_Plan_X</remote-alias>
+              <ordinal>9</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_Plan_Y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[State_Plan_Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State_Plan_Y</remote-alias>
+              <ordinal>10</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6024</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Trash_Hauler_y</remote-alias>
+              <ordinal>11</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>missed_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[missed_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>missed_count</remote-alias>
+              <ordinal>12</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fines</remote-alias>
+              <ordinal>13</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Missed_by_Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Missed_by_Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Missed_by_Zip</remote-alias>
+              <ordinal>14</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Trash_Hauler_x:nk]' type='palette'>
+            <map to='#22b0d0'>
+              <bucket>&quot;WASTE IND&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RED RIVER&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;METRO&quot;</bucket>
+            </map>
+            <map to='#fcffff'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='missed_pickups.csv' id='missed_pickups.csv_45F9E7C5EF334CAD86212991D77C2DFC'>
+            <properties context=''>
+              <relation connection='textscan.0zuekx20j4apa214qk58i0un3qmm' name='missed_pickups.csv' table='[missed_pickups#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Request_Number' ordinal='0' />
+                  <column datatype='date' name='Date_Opened' ordinal='1' />
+                  <column datatype='string' name='Request' ordinal='2' />
+                  <column datatype='string' name='Description' ordinal='3' />
+                  <column datatype='string' name='Incident_Address' ordinal='4' />
+                  <column datatype='integer' name='Zip_Code' ordinal='5' />
+                  <column datatype='string' name='Trash_Hauler_x' ordinal='6' />
+                  <column datatype='integer' name='Trash_Route' ordinal='7' />
+                  <column datatype='integer' name='Council_District' ordinal='8' />
+                  <column datatype='real' name='State_Plan_X' ordinal='9' />
+                  <column datatype='real' name='State_Plan_Y' ordinal='10' />
+                  <column datatype='string' name='Trash_Hauler_y' ordinal='11' />
+                  <column datatype='integer' name='missed_count' ordinal='12' />
+                  <column datatype='integer' name='fines' ordinal='13' />
+                  <column datatype='integer' name='Missed_by_Zip' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='missed_pickups.csv+ (Multiple Connections)' inline='true' name='federated.04f5v0z0xx8z231b6imvl1lhgaud' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='address_fines_summary' name='textscan.0aivooe1gdyu3312edquk0hd4xjo'>
+            <connection class='textscan' directory='C:/Users/user/workspace/c11/Python/projects/Group_Projects/trash-haulers-lambda-landfills' filename='address_fines_summary.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='missed_pickups' name='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9'>
+            <connection class='textscan' directory='C:/Users/user/workspace/c11/Python/projects/Group_Projects/trash-haulers-lambda-landfills' filename='missed_pickups.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='missed_pickups.csv' table='[missed_pickups#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Request_Number' ordinal='0' />
+              <column datatype='date' name='Date_Opened' ordinal='1' />
+              <column datatype='string' name='Request' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='string' name='Incident_Address' ordinal='4' />
+              <column datatype='integer' name='Zip_Code' ordinal='5' />
+              <column datatype='string' name='Trash_Hauler_x' ordinal='6' />
+              <column datatype='integer' name='Trash_Route' ordinal='7' />
+              <column datatype='integer' name='Council_District' ordinal='8' />
+              <column datatype='real' name='State_Plan_X' ordinal='9' />
+              <column datatype='real' name='State_Plan_Y' ordinal='10' />
+              <column datatype='string' name='Trash_Hauler_y' ordinal='11' />
+              <column datatype='integer' name='missed_count' ordinal='12' />
+              <column datatype='integer' name='fines' ordinal='13' />
+              <column datatype='integer' name='Missed_by_Zip' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='address_fines_summary.csv' table='[address_fines_summary#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Incident_Address' ordinal='0' />
+              <column datatype='integer' name='fines' ordinal='1' />
+              <column datatype='integer' name='missed_count' ordinal='2' />
+              <column datatype='integer' name='total_requests' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='hauler_performance_analysis.csv' table='[hauler_performance_analysis#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Trash_Hauler_x' ordinal='0' />
+              <column datatype='integer' name='total_requests' ordinal='1' />
+              <column datatype='integer' name='total_fines_owed' ordinal='2' />
+              <column datatype='integer' name='total_missed_pickups' ordinal='3' />
+              <column datatype='integer' name='unique_addresses' ordinal='4' />
+              <column datatype='real' name='avg_missed_per_address' ordinal='5' />
+              <column datatype='real' name='fine_rate' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='route_performance_analysis.csv' table='[route_performance_analysis#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Trash_Hauler_x' ordinal='0' />
+              <column datatype='string' name='Trash_Route' ordinal='1' />
+              <column datatype='integer' name='total_requests' ordinal='2' />
+              <column datatype='integer' name='total_fines' ordinal='3' />
+              <column datatype='integer' name='total_missed_pickups' ordinal='4' />
+              <column datatype='integer' name='unique_addresses' ordinal='5' />
+              <column datatype='real' name='requests_per_address' ordinal='6' />
+              <column datatype='real' name='fine_per_request' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='zip_code_analysis.csv' table='[zip_code_analysis#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='real' name='Zip_Code' ordinal='0' />
+              <column datatype='integer' name='total_requests' ordinal='1' />
+              <column datatype='integer' name='total_fines' ordinal='2' />
+              <column datatype='integer' name='total_missed_pickups' ordinal='3' />
+              <column datatype='real' name='latitude' ordinal='4' />
+              <column datatype='real' name='longitude' ordinal='5' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Council_District]' value='[missed_pickups.csv].[Council_District]' />
+          <map key='[Date_Opened]' value='[missed_pickups.csv].[Date_Opened]' />
+          <map key='[Description]' value='[missed_pickups.csv].[Description]' />
+          <map key='[Incident_Address (address_fines_summary.csv)]' value='[address_fines_summary.csv].[Incident_Address]' />
+          <map key='[Incident_Address]' value='[missed_pickups.csv].[Incident_Address]' />
+          <map key='[Missed_by_Zip]' value='[missed_pickups.csv].[Missed_by_Zip]' />
+          <map key='[Request]' value='[missed_pickups.csv].[Request]' />
+          <map key='[Request_Number]' value='[missed_pickups.csv].[Request_Number]' />
+          <map key='[State_Plan_X]' value='[missed_pickups.csv].[State_Plan_X]' />
+          <map key='[State_Plan_Y]' value='[missed_pickups.csv].[State_Plan_Y]' />
+          <map key='[Trash_Hauler_x (hauler_performance_analysis.csv)]' value='[hauler_performance_analysis.csv].[Trash_Hauler_x]' />
+          <map key='[Trash_Hauler_x (route_performance_analysis.csv)]' value='[route_performance_analysis.csv].[Trash_Hauler_x]' />
+          <map key='[Trash_Hauler_x]' value='[missed_pickups.csv].[Trash_Hauler_x]' />
+          <map key='[Trash_Hauler_y]' value='[missed_pickups.csv].[Trash_Hauler_y]' />
+          <map key='[Trash_Route (route_performance_analysis.csv)]' value='[route_performance_analysis.csv].[Trash_Route]' />
+          <map key='[Trash_Route]' value='[missed_pickups.csv].[Trash_Route]' />
+          <map key='[Zip_Code (zip_code_analysis.csv)]' value='[zip_code_analysis.csv].[Zip_Code]' />
+          <map key='[Zip_Code]' value='[missed_pickups.csv].[Zip_Code]' />
+          <map key='[avg_missed_per_address]' value='[hauler_performance_analysis.csv].[avg_missed_per_address]' />
+          <map key='[fine_per_request]' value='[route_performance_analysis.csv].[fine_per_request]' />
+          <map key='[fine_rate]' value='[hauler_performance_analysis.csv].[fine_rate]' />
+          <map key='[fines (address_fines_summary.csv)]' value='[address_fines_summary.csv].[fines]' />
+          <map key='[fines]' value='[missed_pickups.csv].[fines]' />
+          <map key='[latitude]' value='[zip_code_analysis.csv].[latitude]' />
+          <map key='[longitude]' value='[zip_code_analysis.csv].[longitude]' />
+          <map key='[missed_count (address_fines_summary.csv)]' value='[address_fines_summary.csv].[missed_count]' />
+          <map key='[missed_count]' value='[missed_pickups.csv].[missed_count]' />
+          <map key='[requests_per_address]' value='[route_performance_analysis.csv].[requests_per_address]' />
+          <map key='[total_fines (zip_code_analysis.csv)]' value='[zip_code_analysis.csv].[total_fines]' />
+          <map key='[total_fines]' value='[route_performance_analysis.csv].[total_fines]' />
+          <map key='[total_fines_owed]' value='[hauler_performance_analysis.csv].[total_fines_owed]' />
+          <map key='[total_missed_pickups (route_performance_analysis.csv)]' value='[route_performance_analysis.csv].[total_missed_pickups]' />
+          <map key='[total_missed_pickups (zip_code_analysis.csv)]' value='[zip_code_analysis.csv].[total_missed_pickups]' />
+          <map key='[total_missed_pickups]' value='[hauler_performance_analysis.csv].[total_missed_pickups]' />
+          <map key='[total_requests (hauler_performance_analysis.csv)]' value='[hauler_performance_analysis.csv].[total_requests]' />
+          <map key='[total_requests (route_performance_analysis.csv)]' value='[route_performance_analysis.csv].[total_requests]' />
+          <map key='[total_requests (zip_code_analysis.csv)]' value='[zip_code_analysis.csv].[total_requests]' />
+          <map key='[total_requests]' value='[address_fines_summary.csv].[total_requests]' />
+          <map key='[unique_addresses (route_performance_analysis.csv)]' value='[route_performance_analysis.csv].[unique_addresses]' />
+          <map key='[unique_addresses]' value='[hauler_performance_analysis.csv].[unique_addresses]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[address_fines_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[zip_code_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Request_Number]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Request_Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_Opened</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date_Opened]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Date_Opened</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Request]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Request</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident_Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Incident_Address]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Incident_Address</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip_Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip_Code]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Zip_Code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_x]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Hauler_x</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Route</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trash_Route]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Route</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Council_District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Council_District]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Council_District</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_Plan_X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State_Plan_X]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>State_Plan_X</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_Plan_Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[State_Plan_Y]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>State_Plan_Y</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_y]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Trash_Hauler_y</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>missed_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[missed_count]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>missed_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fines]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>fines</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Missed_by_Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Missed_by_Zip]</local-name>
+            <parent-name>[missed_pickups.csv]</parent-name>
+            <remote-alias>Missed_by_Zip</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident_Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Incident_Address (address_fines_summary.csv)]</local-name>
+            <parent-name>[address_fines_summary.csv]</parent-name>
+            <remote-alias>Incident_Address</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fines (address_fines_summary.csv)]</local-name>
+            <parent-name>[address_fines_summary.csv]</parent-name>
+            <remote-alias>fines</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>missed_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[missed_count (address_fines_summary.csv)]</local-name>
+            <parent-name>[address_fines_summary.csv]</parent-name>
+            <remote-alias>missed_count</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_requests]</local-name>
+            <parent-name>[address_fines_summary.csv]</parent-name>
+            <remote-alias>total_requests</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_x (hauler_performance_analysis.csv)]</local-name>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias>Trash_Hauler_x</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_requests (hauler_performance_analysis.csv)]</local-name>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias>total_requests</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_fines_owed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_fines_owed]</local-name>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias>total_fines_owed</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_missed_pickups</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_missed_pickups]</local-name>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias>total_missed_pickups</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unique_addresses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unique_addresses]</local-name>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias>unique_addresses</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_missed_per_address</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_missed_per_address]</local-name>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias>avg_missed_per_address</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fine_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fine_rate]</local-name>
+            <parent-name>[hauler_performance_analysis.csv]</parent-name>
+            <remote-alias>fine_rate</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Hauler_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Hauler_x (route_performance_analysis.csv)]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>Trash_Hauler_x</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trash_Route</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Trash_Route (route_performance_analysis.csv)]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>Trash_Route</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_requests (route_performance_analysis.csv)]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>total_requests</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_fines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_fines]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>total_fines</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_missed_pickups</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_missed_pickups (route_performance_analysis.csv)]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>total_missed_pickups</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unique_addresses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unique_addresses (route_performance_analysis.csv)]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>unique_addresses</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>requests_per_address</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[requests_per_address]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>requests_per_address</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fine_per_request</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fine_per_request]</local-name>
+            <parent-name>[route_performance_analysis.csv]</parent-name>
+            <remote-alias>fine_per_request</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip_Code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Zip_Code (zip_code_analysis.csv)]</local-name>
+            <parent-name>[zip_code_analysis.csv]</parent-name>
+            <remote-alias>Zip_Code</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_requests (zip_code_analysis.csv)]</local-name>
+            <parent-name>[zip_code_analysis.csv]</parent-name>
+            <remote-alias>total_requests</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_fines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_fines (zip_code_analysis.csv)]</local-name>
+            <parent-name>[zip_code_analysis.csv]</parent-name>
+            <remote-alias>total_fines</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_missed_pickups</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_missed_pickups (zip_code_analysis.csv)]</local-name>
+            <parent-name>[zip_code_analysis.csv]</parent-name>
+            <remote-alias>total_missed_pickups</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[zip_code_analysis.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[zip_code_analysis.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Council District' datatype='integer' name='[Council_District]' role='measure' type='quantitative' />
+      <column caption='Date Opened' datatype='date' name='[Date_Opened]' role='dimension' type='ordinal' />
+      <column caption='Incident Address (address fines summary.csv)' datatype='string' name='[Incident_Address (address_fines_summary.csv)]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Incident Address' datatype='string' default-role='measure' default-type='quantitative' name='[Incident_Address]' role='dimension' type='nominal' />
+      <column caption='Missed by Zip' datatype='integer' default-format='*00000' name='[Missed_by_Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Request Number' datatype='integer' name='[Request_Number]' role='dimension' type='ordinal' />
+      <column caption='State Plan X' datatype='real' name='[State_Plan_X]' role='measure' type='quantitative' />
+      <column caption='State Plan Y' datatype='real' name='[State_Plan_Y]' role='measure' type='quantitative' />
+      <column caption='Trash Hauler x (hauler performance analysis.csv)' datatype='string' name='[Trash_Hauler_x (hauler_performance_analysis.csv)]' role='dimension' type='nominal' />
+      <column caption='Trash Hauler x (route performance analysis.csv)' datatype='string' name='[Trash_Hauler_x (route_performance_analysis.csv)]' role='dimension' type='nominal' />
+      <column caption='Trash Hauler x' datatype='string' name='[Trash_Hauler_x]' role='dimension' type='nominal' />
+      <column caption='Trash Hauler y' datatype='string' name='[Trash_Hauler_y]' role='dimension' type='nominal' />
+      <column caption='Trash Route (route performance analysis.csv)' datatype='string' name='[Trash_Route (route_performance_analysis.csv)]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Trash Route' datatype='integer' name='[Trash_Route]' role='dimension' type='ordinal' />
+      <column caption='Zip Code (zip code analysis.csv)' datatype='real' default-format='*00000' name='[Zip_Code (zip_code_analysis.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Zip Code' datatype='integer' default-format='*00000' name='[Zip_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='address_fines_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]' role='measure' type='quantitative' />
+      <column caption='hauler_performance_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]' role='measure' type='quantitative' />
+      <column caption='missed_pickups.csv' datatype='table' name='[__tableau_internal_object_id__].[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]' role='measure' type='quantitative' />
+      <column caption='route_performance_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]' role='measure' type='quantitative' />
+      <column caption='zip_code_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]' role='measure' type='quantitative' />
+      <column caption='Avg Missed Per Address' datatype='real' name='[avg_missed_per_address]' role='measure' type='quantitative' />
+      <column caption='Fine Per Request' datatype='real' name='[fine_per_request]' role='measure' type='quantitative' />
+      <column caption='Fine Rate' datatype='real' name='[fine_rate]' role='measure' type='quantitative' />
+      <column caption='Fines (Address Fines Summary.Csv)' datatype='integer' name='[fines (address_fines_summary.csv)]' role='measure' type='quantitative' />
+      <column caption='Fines' datatype='integer' name='[fines]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Missed Count (Address Fines Summary.Csv)' datatype='integer' name='[missed_count (address_fines_summary.csv)]' role='measure' type='quantitative' />
+      <column caption='Missed Count' datatype='integer' name='[missed_count]' role='measure' type='quantitative' />
+      <column caption='Requests Per Address' datatype='real' name='[requests_per_address]' role='measure' type='quantitative' />
+      <column caption='Total Fines (Zip Code Analysis.Csv)' datatype='integer' default-format='*00000' name='[total_fines (zip_code_analysis.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Total Fines' datatype='integer' name='[total_fines]' role='measure' type='quantitative' />
+      <column caption='Total Fines Owed' datatype='integer' name='[total_fines_owed]' role='measure' type='quantitative' />
+      <column caption='Total Missed Pickups (Route Performance Analysis.Csv)' datatype='integer' name='[total_missed_pickups (route_performance_analysis.csv)]' role='measure' type='quantitative' />
+      <column caption='Total Missed Pickups (Zip Code Analysis.Csv)' datatype='integer' default-format='*00000' name='[total_missed_pickups (zip_code_analysis.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Total Missed Pickups' datatype='integer' name='[total_missed_pickups]' role='measure' type='quantitative' />
+      <column caption='Total Requests (Hauler Performance Analysis.Csv)' datatype='integer' name='[total_requests (hauler_performance_analysis.csv)]' role='measure' type='quantitative' />
+      <column caption='Total Requests (Route Performance Analysis.Csv)' datatype='integer' name='[total_requests (route_performance_analysis.csv)]' role='measure' type='quantitative' />
+      <column caption='Total Requests (Zip Code Analysis.Csv)' datatype='integer' default-format='*00000' name='[total_requests (zip_code_analysis.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Total Requests' datatype='integer' name='[total_requests]' role='measure' type='quantitative' />
+      <column caption='Unique Addresses (Route Performance Analysis.Csv)' datatype='integer' name='[unique_addresses (route_performance_analysis.csv)]' role='measure' type='quantitative' />
+      <column caption='Unique Addresses' datatype='integer' name='[unique_addresses]' role='measure' type='quantitative' />
+      <column-instance column='[Date_Opened]' derivation='Month' name='[mn:Date_Opened:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[total_fines (zip_code_analysis.csv)]' derivation='None' name='[none:total_fines (zip_code_analysis.csv):ok]' pivot='key' type='ordinal' />
+      <group caption='Action (MONTH(Date Opened),Trash Hauler x)' hidden='true' name='[Action (MONTH(Date Opened),Trash Hauler x)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Date_Opened:ok]' />
+          <groupfilter function='level-members' level='[Trash_Hauler_x]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Trash Hauler x)' hidden='true' name='[Action (Trash Hauler x)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Trash_Hauler_x]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Zip Code)' hidden='true' name='[Action (Zip Code)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Zip_Code]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_0yy2z950cgvmzb178jcf8172gr1f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/24/2025 05:55:30 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7' table='[Extract].[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]' type='table' />
+            <relation name='address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD' table='[Extract].[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]' type='table' />
+            <relation name='hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322' table='[Extract].[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]' type='table' />
+            <relation name='route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961' table='[Extract].[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]' type='table' />
+            <relation name='zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226' table='[Extract].[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Council_District]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Council_District]' />
+            <map key='[Date_Opened]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Date_Opened]' />
+            <map key='[Description]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Description]' />
+            <map key='[Incident_Address (address_fines_summary.csv)]' value='[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD].[Incident_Address]' />
+            <map key='[Incident_Address]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Incident_Address]' />
+            <map key='[Missed_by_Zip]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Missed_by_Zip]' />
+            <map key='[Request]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Request]' />
+            <map key='[Request_Number]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Request_Number]' />
+            <map key='[State_Plan_X]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[State_Plan_X]' />
+            <map key='[State_Plan_Y]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[State_Plan_Y]' />
+            <map key='[Trash_Hauler_x (hauler_performance_analysis.csv)]' value='[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322].[Trash_Hauler_x]' />
+            <map key='[Trash_Hauler_x (route_performance_analysis.csv)]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[Trash_Hauler_x]' />
+            <map key='[Trash_Hauler_x]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Trash_Hauler_x]' />
+            <map key='[Trash_Hauler_y]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Trash_Hauler_y]' />
+            <map key='[Trash_Route (route_performance_analysis.csv)]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[Trash_Route]' />
+            <map key='[Trash_Route]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Trash_Route]' />
+            <map key='[Zip_Code (zip_code_analysis.csv)]' value='[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226].[Zip_Code]' />
+            <map key='[Zip_Code]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[Zip_Code]' />
+            <map key='[avg_missed_per_address]' value='[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322].[avg_missed_per_address]' />
+            <map key='[fine_per_request]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[fine_per_request]' />
+            <map key='[fine_rate]' value='[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322].[fine_rate]' />
+            <map key='[fines (address_fines_summary.csv)]' value='[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD].[fines]' />
+            <map key='[fines]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[fines]' />
+            <map key='[latitude]' value='[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226].[latitude]' />
+            <map key='[longitude]' value='[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226].[longitude]' />
+            <map key='[missed_count (address_fines_summary.csv)]' value='[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD].[missed_count]' />
+            <map key='[missed_count]' value='[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7].[missed_count]' />
+            <map key='[requests_per_address]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[requests_per_address]' />
+            <map key='[total_fines (zip_code_analysis.csv)]' value='[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226].[total_fines]' />
+            <map key='[total_fines]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[total_fines]' />
+            <map key='[total_fines_owed]' value='[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322].[total_fines_owed]' />
+            <map key='[total_missed_pickups (route_performance_analysis.csv)]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[total_missed_pickups]' />
+            <map key='[total_missed_pickups (zip_code_analysis.csv)]' value='[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226].[total_missed_pickups]' />
+            <map key='[total_missed_pickups]' value='[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322].[total_missed_pickups]' />
+            <map key='[total_requests (hauler_performance_analysis.csv)]' value='[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322].[total_requests]' />
+            <map key='[total_requests (route_performance_analysis.csv)]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[total_requests]' />
+            <map key='[total_requests (zip_code_analysis.csv)]' value='[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226].[total_requests]' />
+            <map key='[total_requests]' value='[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD].[total_requests]' />
+            <map key='[unique_addresses (route_performance_analysis.csv)]' value='[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961].[unique_addresses]' />
+            <map key='[unique_addresses]' value='[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322].[unique_addresses]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Request_Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Request_Number]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Request_Number</remote-alias>
+              <ordinal>0</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13923</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date_Opened</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date_Opened]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Date_Opened</remote-alias>
+              <ordinal>1</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Request</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Request]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Request</remote-alias>
+              <ordinal>2</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>3</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4365</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident_Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident_Address]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Incident_Address</remote-alias>
+              <ordinal>4</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6018</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip_Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip_Code]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Zip_Code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_x]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Trash_Hauler_x</remote-alias>
+              <ordinal>6</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Route</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Trash_Route]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Trash_Route</remote-alias>
+              <ordinal>7</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Council_District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Council_District]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Council_District</remote-alias>
+              <ordinal>8</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_Plan_X</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[State_Plan_X]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>State_Plan_X</remote-alias>
+              <ordinal>9</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5996</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_Plan_Y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[State_Plan_Y]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>State_Plan_Y</remote-alias>
+              <ordinal>10</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6024</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_y]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Trash_Hauler_y</remote-alias>
+              <ordinal>11</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>missed_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[missed_count]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>missed_count</remote-alias>
+              <ordinal>12</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fines]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>fines</remote-alias>
+              <ordinal>13</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Missed_by_Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Missed_by_Zip]</local-name>
+              <parent-name>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</parent-name>
+              <remote-alias>Missed_by_Zip</remote-alias>
+              <ordinal>14</ordinal>
+              <family>missed_pickups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident_Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident_Address (address_fines_summary.csv)]</local-name>
+              <parent-name>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</parent-name>
+              <remote-alias>Incident_Address</remote-alias>
+              <ordinal>15</ordinal>
+              <family>address_fines_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11707</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[fines (address_fines_summary.csv)]</local-name>
+              <parent-name>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</parent-name>
+              <remote-alias>fines</remote-alias>
+              <ordinal>16</ordinal>
+              <family>address_fines_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>missed_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[missed_count (address_fines_summary.csv)]</local-name>
+              <parent-name>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</parent-name>
+              <remote-alias>missed_count</remote-alias>
+              <ordinal>17</ordinal>
+              <family>address_fines_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_requests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_requests]</local-name>
+              <parent-name>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</parent-name>
+              <remote-alias>total_requests</remote-alias>
+              <ordinal>18</ordinal>
+              <family>address_fines_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_x (hauler_performance_analysis.csv)]</local-name>
+              <parent-name>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</parent-name>
+              <remote-alias>Trash_Hauler_x</remote-alias>
+              <ordinal>19</ordinal>
+              <family>hauler_performance_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_requests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_requests (hauler_performance_analysis.csv)]</local-name>
+              <parent-name>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</parent-name>
+              <remote-alias>total_requests</remote-alias>
+              <ordinal>20</ordinal>
+              <family>hauler_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_fines_owed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_fines_owed]</local-name>
+              <parent-name>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</parent-name>
+              <remote-alias>total_fines_owed</remote-alias>
+              <ordinal>21</ordinal>
+              <family>hauler_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_missed_pickups</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_missed_pickups]</local-name>
+              <parent-name>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</parent-name>
+              <remote-alias>total_missed_pickups</remote-alias>
+              <ordinal>22</ordinal>
+              <family>hauler_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unique_addresses</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[unique_addresses]</local-name>
+              <parent-name>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</parent-name>
+              <remote-alias>unique_addresses</remote-alias>
+              <ordinal>23</ordinal>
+              <family>hauler_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_missed_per_address</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_missed_per_address]</local-name>
+              <parent-name>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</parent-name>
+              <remote-alias>avg_missed_per_address</remote-alias>
+              <ordinal>24</ordinal>
+              <family>hauler_performance_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fine_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fine_rate]</local-name>
+              <parent-name>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</parent-name>
+              <remote-alias>fine_rate</remote-alias>
+              <ordinal>25</ordinal>
+              <family>hauler_performance_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Hauler_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Hauler_x (route_performance_analysis.csv)]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>Trash_Hauler_x</remote-alias>
+              <ordinal>26</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Trash_Route</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Trash_Route (route_performance_analysis.csv)]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>Trash_Route</remote-alias>
+              <ordinal>27</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>172</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_requests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_requests (route_performance_analysis.csv)]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>total_requests</remote-alias>
+              <ordinal>28</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_fines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_fines]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>total_fines</remote-alias>
+              <ordinal>29</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_missed_pickups</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_missed_pickups (route_performance_analysis.csv)]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>total_missed_pickups</remote-alias>
+              <ordinal>30</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>135</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unique_addresses</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[unique_addresses (route_performance_analysis.csv)]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>unique_addresses</remote-alias>
+              <ordinal>31</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>requests_per_address</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[requests_per_address]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>requests_per_address</remote-alias>
+              <ordinal>32</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>145</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fine_per_request</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fine_per_request]</local-name>
+              <parent-name>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</parent-name>
+              <remote-alias>fine_per_request</remote-alias>
+              <ordinal>33</ordinal>
+              <family>route_performance_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>154</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip_Code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Zip_Code (zip_code_analysis.csv)]</local-name>
+              <parent-name>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</parent-name>
+              <remote-alias>Zip_Code</remote-alias>
+              <ordinal>34</ordinal>
+              <family>zip_code_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_requests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_requests (zip_code_analysis.csv)]</local-name>
+              <parent-name>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</parent-name>
+              <remote-alias>total_requests</remote-alias>
+              <ordinal>35</ordinal>
+              <family>zip_code_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_fines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_fines (zip_code_analysis.csv)]</local-name>
+              <parent-name>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</parent-name>
+              <remote-alias>total_fines</remote-alias>
+              <ordinal>36</ordinal>
+              <family>zip_code_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_missed_pickups</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_missed_pickups (zip_code_analysis.csv)]</local-name>
+              <parent-name>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</parent-name>
+              <remote-alias>total_missed_pickups</remote-alias>
+              <ordinal>37</ordinal>
+              <family>zip_code_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>38</ordinal>
+              <family>zip_code_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>39</ordinal>
+              <family>zip_code_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:total_fines (zip_code_analysis.csv):ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>31000</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>184000</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>16600</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>376800</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>90200</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>57800</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>17800</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>524400</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>161200</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>205400</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>142200</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>22400</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>99400</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>124600</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>143000</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>163600</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>74000</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>23200</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>400</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>239400</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>124800</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>83000</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>5600</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>288400</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='address_fines_summary.csv' id='address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD'>
+            <properties context=''>
+              <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='address_fines_summary.csv' table='[address_fines_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Incident_Address' ordinal='0' />
+                  <column datatype='integer' name='fines' ordinal='1' />
+                  <column datatype='integer' name='missed_count' ordinal='2' />
+                  <column datatype='integer' name='total_requests' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD' table='[Extract].[address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD]' type='table' />
+            </properties>
+          </object>
+          <object caption='hauler_performance_analysis.csv' id='hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322'>
+            <properties context=''>
+              <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='hauler_performance_analysis.csv' table='[hauler_performance_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Trash_Hauler_x' ordinal='0' />
+                  <column datatype='integer' name='total_requests' ordinal='1' />
+                  <column datatype='integer' name='total_fines_owed' ordinal='2' />
+                  <column datatype='integer' name='total_missed_pickups' ordinal='3' />
+                  <column datatype='integer' name='unique_addresses' ordinal='4' />
+                  <column datatype='real' name='avg_missed_per_address' ordinal='5' />
+                  <column datatype='real' name='fine_rate' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322' table='[Extract].[hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322]' type='table' />
+            </properties>
+          </object>
+          <object caption='missed_pickups.csv' id='missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7'>
+            <properties context=''>
+              <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='missed_pickups.csv' table='[missed_pickups#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Request_Number' ordinal='0' />
+                  <column datatype='date' name='Date_Opened' ordinal='1' />
+                  <column datatype='string' name='Request' ordinal='2' />
+                  <column datatype='string' name='Description' ordinal='3' />
+                  <column datatype='string' name='Incident_Address' ordinal='4' />
+                  <column datatype='integer' name='Zip_Code' ordinal='5' />
+                  <column datatype='string' name='Trash_Hauler_x' ordinal='6' />
+                  <column datatype='integer' name='Trash_Route' ordinal='7' />
+                  <column datatype='integer' name='Council_District' ordinal='8' />
+                  <column datatype='real' name='State_Plan_X' ordinal='9' />
+                  <column datatype='real' name='State_Plan_Y' ordinal='10' />
+                  <column datatype='string' name='Trash_Hauler_y' ordinal='11' />
+                  <column datatype='integer' name='missed_count' ordinal='12' />
+                  <column datatype='integer' name='fines' ordinal='13' />
+                  <column datatype='integer' name='Missed_by_Zip' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7' table='[Extract].[missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7]' type='table' />
+            </properties>
+          </object>
+          <object caption='route_performance_analysis.csv' id='route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961'>
+            <properties context=''>
+              <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='route_performance_analysis.csv' table='[route_performance_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Trash_Hauler_x' ordinal='0' />
+                  <column datatype='string' name='Trash_Route' ordinal='1' />
+                  <column datatype='integer' name='total_requests' ordinal='2' />
+                  <column datatype='integer' name='total_fines' ordinal='3' />
+                  <column datatype='integer' name='total_missed_pickups' ordinal='4' />
+                  <column datatype='integer' name='unique_addresses' ordinal='5' />
+                  <column datatype='real' name='requests_per_address' ordinal='6' />
+                  <column datatype='real' name='fine_per_request' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961' table='[Extract].[route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961]' type='table' />
+            </properties>
+          </object>
+          <object caption='zip_code_analysis.csv' id='zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226'>
+            <properties context=''>
+              <relation connection='textscan.0qxxhnp0g67cxv1emb8iy17aqwn9' name='zip_code_analysis.csv' table='[zip_code_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='Zip_Code' ordinal='0' />
+                  <column datatype='integer' name='total_requests' ordinal='1' />
+                  <column datatype='integer' name='total_fines' ordinal='2' />
+                  <column datatype='integer' name='total_missed_pickups' ordinal='3' />
+                  <column datatype='real' name='latitude' ordinal='4' />
+                  <column datatype='real' name='longitude' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226' table='[Extract].[zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Incident_Address]' />
+              <expression op='[Incident_Address (address_fines_summary.csv)]' />
+            </expression>
+            <first-end-point object-id='missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7' />
+            <second-end-point object-id='address_fines_summary.csv_DF242C720BD548AF9AA45DEB57D550AD' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Trash_Hauler_x]' />
+              <expression op='[Trash_Hauler_x (hauler_performance_analysis.csv)]' />
+            </expression>
+            <first-end-point object-id='missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7' />
+            <second-end-point object-id='hauler_performance_analysis.csv_9C552590F2C6450BAA41DDF02E2F2322' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Trash_Hauler_x]' />
+              <expression op='[Trash_Hauler_x (route_performance_analysis.csv)]' />
+            </expression>
+            <first-end-point object-id='missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7' />
+            <second-end-point object-id='route_performance_analysis.csv_C766AE7D95F84034A381B0E556BAF961' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Zip_Code]' />
+              <expression op='[Zip_Code (zip_code_analysis.csv)]' />
+            </expression>
+            <first-end-point object-id='missed_pickups.csv_FE8A60A9522342308AB65020DA16A7C7' />
+            <second-end-point object-id='zip_code_analysis.csv_469FE1AF8C4D49DD8D34376F64F81226' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 2 (generated)' name='[Action2_6E3E91CD203441BCB5C8CF099B84AFC4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_D6C7429052E4498BACAD1423C13D4A27]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='missed_pickups.csv+ (Multiple Connections)' name='federated.04f5v0z0xx8z231b6imvl1lhgaud' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04f5v0z0xx8z231b6imvl1lhgaud'>
+            <column caption='Zip Code (zip code analysis.csv)' datatype='real' default-format='*00000' name='[Zip_Code (zip_code_analysis.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column caption='Fines' datatype='integer' name='[fines]' role='measure' type='quantitative' />
+            <column-instance column='[Zip_Code (zip_code_analysis.csv)]' derivation='None' name='[none:Zip_Code (zip_code_analysis.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[fines]' derivation='Sum' name='[sum:fines:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_missed_pickups]' derivation='Sum' name='[sum:total_missed_pickups:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Missed Pickups' datatype='integer' name='[total_missed_pickups]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Longitude (generated)]' field-type='quantitative' max='-9573591.0117883552' min='-9743359.1879539732' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Latitude (generated)]' field-type='quantitative' max='4367691.8967415877' min='4266480.8172468701' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_missed_pickups:qk]' />
+              <size column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[none:Zip_Code (zip_code_analysis.csv):ok]' />
+              <tooltip column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:fines:qk]' />
+              <geometry column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Latitude (generated)]</rows>
+        <cols>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8B2552E2-B1A6-469E-8B4D-C280365ED950}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='missed_pickups.csv+ (Multiple Connections)' name='federated.04f5v0z0xx8z231b6imvl1lhgaud' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04f5v0z0xx8z231b6imvl1lhgaud'>
+            <column caption='Date Opened' datatype='date' name='[Date_Opened]' role='dimension' type='ordinal' />
+            <column caption='Trash Hauler x' datatype='string' name='[Trash_Hauler_x]' role='dimension' type='nominal' />
+            <column caption='Zip Code' datatype='integer' default-format='*00000' name='[Zip_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Missed Count' datatype='integer' name='[missed_count]' role='measure' type='quantitative' />
+            <column-instance column='[Date_Opened]' derivation='Month' name='[mn:Date_Opened:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Zip_Code]' derivation='None' name='[none:Zip_Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[missed_count]' derivation='Sum' name='[sum:missed_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_requests]' derivation='Sum' name='[sum:total_requests:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Requests' datatype='integer' name='[total_requests]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_D6C7429052E4498BACAD1423C13D4A27]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Date_Opened:ok]' />
+              <groupfilter function='level-members' level='[Trash_Hauler_x]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[avg:longitude:qk]' field-type='quantitative' max='-9621341.2115639802' min='-9722390.611023847' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[avg:latitude:qk]' field-type='quantitative' max='4344165.7975283796' min='4293560.2569104489' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:missed_count:qk]' />
+              <lod column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[none:Zip_Code:ok]' />
+              <tooltip column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_requests:qk]' />
+              <geometry column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Zip Code:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.04f5v0z0xx8z231b6imvl1lhgaud].[none:Zip_Code:ok]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#757575'>Æ&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Missed Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:missed_count:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Total Requests:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_requests:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[avg:latitude:qk]</rows>
+        <cols>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{A7CBA4A2-CA2E-4EAC-849A-B20B2CACF6A7}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='missed_pickups.csv+ (Multiple Connections)' name='federated.04f5v0z0xx8z231b6imvl1lhgaud' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04f5v0z0xx8z231b6imvl1lhgaud'>
+            <column caption='Date Opened' datatype='date' name='[Date_Opened]' role='dimension' type='ordinal' />
+            <column aggregation='CountD' caption='Incident Address' datatype='string' default-role='measure' default-type='quantitative' name='[Incident_Address]' role='dimension' type='nominal' />
+            <column caption='Trash Hauler x' datatype='string' name='[Trash_Hauler_x]' role='dimension' type='nominal' />
+            <column caption='Zip Code' datatype='integer' default-format='*00000' name='[Zip_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column-instance column='[Incident_Address]' derivation='CountD' name='[ctd:Incident_Address:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date_Opened]' derivation='Month' name='[mn:Date_Opened:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Trash_Hauler_x]' derivation='None' name='[none:Trash_Hauler_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_requests]' derivation='Sum' name='[sum:total_requests:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Requests' datatype='integer' name='[total_requests]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_D6C7429052E4498BACAD1423C13D4A27]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Date_Opened:ok]' />
+              <groupfilter function='level-members' level='[Trash_Hauler_x]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (Zip Code)]'>
+            <groupfilter function='level-members' level='[Zip_Code]' user:ui-action-filter='[Action2_6E3E91CD203441BCB5C8CF099B84AFC4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]</column>
+            <column>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (Zip Code)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[ctd:Incident_Address:qk]' />
+              <text column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[none:Trash_Hauler_x:nk]' />
+              <color column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_requests:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D246D682-4EF1-4330-B616-D877170337E7}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='missed_pickups.csv+ (Multiple Connections)' name='federated.04f5v0z0xx8z231b6imvl1lhgaud' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04f5v0z0xx8z231b6imvl1lhgaud'>
+            <column caption='Date Opened' datatype='date' name='[Date_Opened]' role='dimension' type='ordinal' />
+            <column aggregation='CountD' caption='Incident Address' datatype='string' default-role='measure' default-type='quantitative' name='[Incident_Address]' role='dimension' type='nominal' />
+            <column caption='Trash Hauler x' datatype='string' name='[Trash_Hauler_x]' role='dimension' type='nominal' />
+            <column caption='Zip Code' datatype='integer' default-format='*00000' name='[Zip_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column-instance column='[Incident_Address]' derivation='CountD' name='[ctd:Incident_Address:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date_Opened]' derivation='Month' name='[mn:Date_Opened:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Trash_Hauler_x]' derivation='None' name='[none:Trash_Hauler_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_requests]' derivation='Sum' name='[sum:total_requests:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Requests' datatype='integer' name='[total_requests]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_D6C7429052E4498BACAD1423C13D4A27]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Date_Opened:ok]' />
+              <groupfilter function='level-members' level='[Trash_Hauler_x]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (Zip Code)]'>
+            <groupfilter function='member' level='[Zip_Code]' member='37209' user:ui-action-filter='[Action2_6E3E91CD203441BCB5C8CF099B84AFC4]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]</column>
+            <column>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (Zip Code)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[ctd:Incident_Address:qk]' />
+              <text column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[none:Trash_Hauler_x:nk]' />
+              <color column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_requests:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EC1DFFE2-8E6D-43AD-B85B-301E3C64BB23}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='missed_pickups' name='federated.0wociql1rfg61112vt46610ei7sv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wociql1rfg61112vt46610ei7sv'>
+            <column caption='Date Opened' datatype='date' name='[Date_Opened]' role='dimension' type='ordinal' />
+            <column caption='Trash Hauler x' datatype='string' name='[Trash_Hauler_x]' role='dimension' type='nominal' />
+            <column caption='Zip Code' datatype='integer' default-format='*00000' name='[Zip_Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column caption='Missed Count' datatype='integer' name='[missed_count]' role='measure' type='quantitative' />
+            <column-instance column='[Date_Opened]' derivation='Month' name='[mn:Date_Opened:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Trash_Hauler_x]' derivation='None' name='[none:Trash_Hauler_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[missed_count]' derivation='Sum' name='[sum:missed_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wociql1rfg61112vt46610ei7sv].[Action (Zip Code)]'>
+            <groupfilter function='level-members' level='[Zip_Code]' user:ui-action-filter='[Action2_6E3E91CD203441BCB5C8CF099B84AFC4]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0wociql1rfg61112vt46610ei7sv].[Action (Zip Code)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0wociql1rfg61112vt46610ei7sv].[none:Trash_Hauler_x:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0wociql1rfg61112vt46610ei7sv].[sum:missed_count:qk]</rows>
+        <cols>[federated.0wociql1rfg61112vt46610ei7sv].[mn:Date_Opened:qk]</cols>
+      </table>
+      <simple-id uuid='{E83E9F14-0372-437D-AFC4-FBEE661867E1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49010' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1070'>
+            <zone fixed-size='294' h='49010' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1070'>
+              <zone h='34838' id='11' name='Sheet 4' w='97538' x='1231' y='1070'>
+                <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14172' id='12' name='Sheet 4' pane-specification-id='2' param='[federated.0wociql1rfg61112vt46610ei7sv].[none:Trash_Hauler_x:nk]' type-v2='color' w='97538' x='1231' y='35908'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='48850' id='3' name='Sheet 2' w='97538' x='1231' y='50080'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='23262' id='9' name='Sheet 3' w='52154' x='55692' y='32219' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97860' id='13' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1070'>
+                <zone fixed-size='280' h='34838' id='11' is-fixed='true' name='Sheet 4' w='97538' x='1231' y='1070'>
+                  <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14172' id='12' name='Sheet 4' pane-specification-id='2' param='[federated.0wociql1rfg61112vt46610ei7sv].[none:Trash_Hauler_x:nk]' type-v2='color' w='97538' x='1231' y='35908'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='200' h='23262' id='9' is-fixed='true' name='Sheet 3' w='52154' x='55692' y='32219'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48850' id='3' is-fixed='true' name='Sheet 2' w='97538' x='1231' y='50080'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8C471252-9499-4E7E-8BBA-0F95FC18B3E7}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='Dashboard 1' id='1'>
+                    <currentDeltas>
+                      <worksheet name='Sheet 2'>
+                        <filter class='categorical' column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]'>
+                          <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action3_D6C7429052E4498BACAD1423C13D4A27]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                            <groupfilter function='crossjoin'>
+                              <groupfilter function='member' level='[Trash_Hauler_x]' member='%null%' />
+                              <groupfilter function='member' level='[mn:Date_Opened:ok]' member='5' />
+                            </groupfilter>
+                            <order>
+                              <hierarchy name='[mn:Date_Opened:ok]' />
+                              <hierarchy name='[Trash_Hauler_x]' />
+                            </order>
+                          </groupfilter>
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Sheet 3'>
+                        <filter class='categorical' column='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[Action (MONTH(Date Opened),Trash Hauler x)]'>
+                          <groupfilter function='reorder-dimensionality' user:ui-action-filter='[Action3_D6C7429052E4498BACAD1423C13D4A27]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                            <groupfilter function='crossjoin'>
+                              <groupfilter function='member' level='[Trash_Hauler_x]' member='%null%' />
+                              <groupfilter function='member' level='[mn:Date_Opened:ok]' member='5' />
+                            </groupfilter>
+                            <order>
+                              <hierarchy name='[mn:Date_Opened:ok]' />
+                              <hierarchy name='[Trash_Hauler_x]' />
+                            </order>
+                          </groupfilter>
+                        </filter>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields />
+                                  <y-fields />
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[ctd:Incident_Address:qk]</field>
+                                  <field>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[none:Trash_Hauler_x:nk]</field>
+                                  <field>[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_requests:qk]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>73</value>
+                                <value>%null%</value>
+                                <value>389</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                      <worksheet name='Sheet 4'>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.0wociql1rfg61112vt46610ei7sv].[mn:Date_Opened:qk]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.0wociql1rfg61112vt46610ei7sv].[sum:missed_count:qk]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.0wociql1rfg61112vt46610ei7sv].[mn:Date_Opened:qk]</field>
+                                  <field>[federated.0wociql1rfg61112vt46610ei7sv].[none:Trash_Hauler_x:nk]</field>
+                                  <field>[federated.0wociql1rfg61112vt46610ei7sv].[sum:missed_count:qk]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>5</value>
+                                <value>%null%</value>
+                                <value>294</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </currentDeltas>
+                    <capturedDeltas />
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{E44825DE-D6DD-4614-B7DF-81E879663FE4}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[none:Zip_Code (zip_code_analysis.csv):ok]' type='size' />
+            <card pane-specification-id='0' param='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_missed_pickups:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9EFB8CE2-81D3-43BF-868D-298AAB396C08}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:missed_count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A76720B1-19E5-4E7A-8547-515B60139975}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_requests:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{44DFD84E-A202-4BAC-BCBB-1270953B3845}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{37A84A0D-CE5D-45D7-ABA0-D924DA1D741D}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04f5v0z0xx8z231b6imvl1lhgaud].[sum:total_requests:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AA86915-0D94-4079-AC1C-B6D108F69FA6}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0wociql1rfg61112vt46610ei7sv].[none:Trash_Hauler_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{614CEF8C-2AB9-4DAD-BC97-9B75E60D65D3}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{678234E1-2357-4B3B-8F52-7BBE1D05772B}' />
+    </window>
+  </windows>
+</workbook>
